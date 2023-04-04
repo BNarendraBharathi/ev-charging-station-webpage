@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EV Charging Calculator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<div class="container">
+		<h1>EV Charging Calculator</h1>
+		<form>
+			<label for="model">Select your EV model:</label>
+			<select id="model" name="model">
+				<option value="Tata Nexon EV">Tata Nexon EV</option>
+				<option value="MG ZS EV">MG ZS EV</option>
+				<option value="Hyundai Kona Electric">Hyundai Kona Electric</option>
+				<option value="Mahindra eKUV100">Mahindra eKUV100</option>
+				<option value="Tata Tigor EV">Tata Tigor EV</option>
+				<option value="Mahindra eVerito">Mahindra eVerito</option>
+				<option value="Okinawa iPraise+">Okinawa iPraise+</option>
+				<option value="Hero Electric Optima HX">Hero Electric Optima HX</option>
+				<option value="Ather 450X">Ather 450X</option>
+				<option value="Revolt RV400">Revolt RV400</option>
+			</select>
+			<label for="percentage">Select the percentage level of battery you want to charge:</label>
+			<input type="number" id="percentage" name="percentage" min="1" max="100" required>
+			<button type="button" id="calculateBtn" onclick="calculateChargingCost()">Calculate</button>
+		</form>
+		<div id="result"></div>
+	</div>
+	<script src="jscode.js"></script>
+</body>
+</html>
